@@ -1,0 +1,299 @@
+html, body, * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  width: 100%;
+  height: 60vh;
+  background: url(../img/breadcrumb.webp);
+  background-position: center;
+  background-size: cover;
+}
+header .navbar-top {
+  width: 100%;
+  height: 10vh;
+  background-color: black;
+  opacity: 0.3;
+}
+header .navbar-top .top-cont {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+header .navbar-top .top-cont .top-left {
+  display: flex;
+  justify-content: space-between;
+  width: 21%;
+}
+header .navbar-top .top-cont .top-left a {
+  color: rgb(255, 255, 255);
+}
+header .navbar-top .top-cont .top-right {
+  width: 10%;
+}
+header .navbar-top .top-cont .top-right .icon {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+header .navbar-bottom .bottom-cont {
+  display: flex;
+  justify-content: space-around;
+}
+header .navbar-bottom .bottom-cont .bottom-left {
+  height: 15vh;
+  display: flex;
+  align-items: center;
+}
+header .navbar-bottom .bottom-cont .bottom-right {
+  width: 45%;
+}
+header .navbar-bottom .bottom-cont .bottom-right ul {
+  height: 15vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .navbar-bottom .bottom-cont .bottom-right ul li a {
+  color: #fff;
+}
+header .navbar-bottom .bottom-cont .bottom-right button {
+  width: 30%;
+  height: 10vh;
+  display: none;
+}
+header .attornies {
+  height: 30vh;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header .attornies h2 {
+  font-size: 30px;
+  letter-spacing: 4px;
+}
+header .attornies h6 {
+  font-size: 14px;
+  margin-top: 15px;
+}
+header .attornies h6 span {
+  color: rgb(230, 49, 17);
+}
+
+.cards {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+.cards .card-container {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.cards .card-container .card {
+  width: 21%;
+  height: 360px;
+  background: url(../img/bg.webp);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  margin: 40px 0;
+}
+.cards .card-container .card .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  color: rgb(126, 126, 126);
+}
+.cards .card-container .card .text img {
+  border-radius: 50%;
+}
+.cards .card-container .card .text p {
+  text-align: center;
+}
+.cards .card-container .card .text ul {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+}
+.cards .card-container .card .text ul li a {
+  color: rgb(126, 126, 126);
+  border: 1px solid rgb(126, 126, 126);
+  border-radius: 50%;
+  padding: 10px;
+  margin-right: 8px;
+}
+
+.foot {
+  width: 100%;
+  height: auto;
+  background-color: black;
+  color: #fff;
+}
+.foot .part-cont {
+  padding: 50px 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.foot .part-cont .part1 {
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.foot .part-cont .part1 h3 {
+  color: #fff;
+}
+.foot .part-cont .part1 p {
+  display: flex;
+}
+.foot .part-cont .part1 p span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  background-color: #fff;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+.foot .part-cont .part1 p span i {
+  color: red;
+}
+.foot .part-cont .part2, .foot .part-cont .part3 {
+  height: 40vh;
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.foot .part-cont .part2 ul, .foot .part-cont .part3 ul {
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.foot .part-cont .part2 ul li, .foot .part-cont .part3 ul li {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+}
+.foot .part-cont .part2 ul li a, .foot .part-cont .part3 ul li a {
+  color: #fff;
+}
+.foot .part-cont .part2 ul li a:hover, .foot .part-cont .part3 ul li a:hover {
+  color: red;
+}
+.foot .part-cont .part4 {
+  height: 40vh;
+}
+.foot .part-cont .part4 h3 {
+  margin-bottom: 20px;
+}
+
+footer {
+  height: auto;
+  width: 100%;
+  padding: 30px 0;
+  background-color: rgb(51, 51, 51);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+footer .part1 {
+  color: #fff;
+}
+footer .part1 p {
+  font-size: 14px;
+}
+footer .part1 p a {
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+}
+footer .part2, footer .foot .part-cont .part3, .foot .part-cont footer .part3 {
+  display: flex;
+}
+footer .part2 span, footer .foot .part-cont .part3 span, .foot .part-cont footer .part3 span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #fff;
+  color: red;
+  margin-right: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar-top {
+    display: none;
+  }
+  .navbar-bottom .bottom-cont {
+    display: flex;
+    justify-content: space-between;
+  }
+  .navbar-bottom .bottom-cont .bottom-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .navbar-bottom .bottom-cont .bottom-right ul li a {
+    display: none;
+  }
+  .navbar-bottom .bottom-cont .bottom-right .menu {
+    display: block;
+  }
+  .cards {
+    flex-direction: column;
+  }
+  .cards .card-container {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .cards .card-container .card {
+    width: 80%;
+  }
+  .foot .part-cont {
+    flex-direction: column;
+  }
+  .foot .part-cont .part1 {
+    width: 100%;
+  }
+  .foot .part-cont .part2, .foot .part-cont .part3 {
+    width: 100%;
+  }
+  .foot .part-cont .part4 {
+    width: 100%;
+  }
+  footer {
+    flex-direction: column;
+  }
+  footer .part1 {
+    margin-bottom: 10px;
+  }
+}/*# sourceMappingURL=style.css.map */
